@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="text-center px-1 mt-10">
+    <div className="text-center px-1 my-10">
       <NavLink
         className={({ isActive }) =>
           (isActive
