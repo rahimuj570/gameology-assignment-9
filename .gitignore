@@ -7,7 +7,9 @@
 
 # testing
 /coverage
-
+requirement.txt
+/requirement.txt
+requirement
 # production
 /build
 
