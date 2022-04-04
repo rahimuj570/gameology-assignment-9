@@ -1,7 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import HomeImg from "../../Img/HomePic.png";
+import useFakeData from "../../Utilize/useFakeData";
+import Review from "../Reviews/Review";
+import { MdMoreTime } from "react-icons/md";
 
 const Home = () => {
+  const data = useFakeData();
   return (
     <div>
       <div className="bg-indigo-400 grid grid-cols-2 justify-between items-center font-bold text-xl py-5">
@@ -19,15 +24,28 @@ const Home = () => {
           <img className="" src={HomeImg} alt="" />
         </div>
       </div>
-      <div className="border border-4 border-indigo-400 text-center py-10">
+      <div className="border-4 border-indigo-400  py-10">
         <h4
-          className="text-2xl font-semibold font-gos
+          className="text-center text-2xl font-semibold font-gos
         "
         >
           Recent Reviews
         </h4>
         <hr className="w-3/6 mx-auto mt-2" />
-        <div className="gird grid-cols-3"></div>
+        <div className="grid gap-6 mx-3 my-5 sm:grid-cols-3 grid-cols-1">
+          {data.slice(2, 5).map((game) => (
+            <Review game={game} key={game.id} />
+          ))}
+        </div>
+        <div className="sm:w-2/6 w-5/6 mx-auto text-center  mb-4">
+          <Link
+            className="flex items-center justify-center bg-indigo-500 text-white py-2 px-4 rounded hover:bg-indigo-600 font-semibold text-xl "
+            to="/reviews"
+          >
+            Show More Reviews{" "}
+            <MdMoreTime className="text-2xl ml-1 sm:ml-0 sm:basis-10" />
+          </Link>
+        </div>
       </div>
     </div>
   );
