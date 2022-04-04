@@ -3,12 +3,13 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="text-center px-1 my-10">
+    <div className="grid grid-cols-1 sm:block text-center px-1 sm:my-10 my-5 ">
       <NavLink
         className={({ isActive }) =>
           (isActive
             ? "shadow px-1 border border-b-8 border-b-indigo-300 rounded bg-sky-50"
-            : "") + " text-md sm:text-xl mr-3 shadow px-1  py-1"
+            : "") +
+          " text-md sm:text-xl sm:mr-3 shadow px-1 py-1 font-gos hover:bg-indigo-50 mb-1 sm:mb-0"
         }
         to={"/"}
       >
@@ -18,7 +19,8 @@ const Header = () => {
         className={({ isActive }) =>
           (isActive
             ? "shadow px-1 border border-b-8 border-b-indigo-300 rounded bg-sky-50"
-            : "") + " text-md sm:text-xl mr-3 shadow px-1 py-1"
+            : "") +
+          " text-md sm:text-xl sm:mr-3 shadow px-1 py-1 font-gos hover:bg-indigo-50 mb-1 sm:mb-0"
         }
         to={"/reviews"}
       >
@@ -28,7 +30,8 @@ const Header = () => {
         className={({ isActive }) =>
           (isActive
             ? "shadow px-1 border border-b-8 border-b-indigo-300 rounded bg-sky-50"
-            : "") + " text-md sm:text-xl mr-3 shadow px-1 py-1"
+            : "") +
+          " text-md sm:text-xl sm:mr-3 shadow px-1 py-1 font-gos hover:bg-indigo-50 mb-1 sm:mb-0"
         }
         to={"/dashboard"}
       >
@@ -38,7 +41,8 @@ const Header = () => {
         className={({ isActive }) =>
           (isActive
             ? "shadow px-1 border border-b-8 border-b-indigo-300 rounded bg-sky-50"
-            : "") + " text-md sm:text-xl mr-3 shadow px-1 py-1"
+            : "") +
+          " text-md sm:text-xl sm:mr-3 shadow px-1 py-1 font-gos hover:bg-indigo-50 mb-1 sm:mb-0"
         }
         to={"/blog"}
       >
@@ -48,7 +52,8 @@ const Header = () => {
         className={({ isActive }) =>
           (isActive
             ? "shadow px-1 border border-b-8 border-b-indigo-300 rounded bg-sky-50"
-            : "") + " text-md sm:text-xl mr-3 shadow px-1 py-1"
+            : "") +
+          " text-md sm:text-xl sm:mr-3 shadow px-1 py-1 font-gos hover:bg-indigo-50 "
         }
         to={"/about"}
       >

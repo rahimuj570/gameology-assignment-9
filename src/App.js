@@ -11,7 +11,7 @@ import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
-    <>
+    <div className="font-pop">
       <Header />
       <Routes>
         <Route path="/" element={<Home />}></Route>
@@ -22,7 +22,7 @@ function App() {
         <Route path="*" element={<NotFound404 />}></Route>
       </Routes>
       <Footer />
-    </>
+    </div>
   );
 }
 
