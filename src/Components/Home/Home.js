@@ -20,8 +20,14 @@ const Home = () => {
         </div>
       </div>
       <div className="border border-4 border-indigo-400 text-center py-10">
-        <h4 className="text-2xl font-semibold font-gos">Recent Reviews</h4>
+        <h4
+          className="text-2xl font-semibold font-gos
+        "
+        >
+          Recent Reviews
+        </h4>
         <hr className="w-3/6 mx-auto mt-2" />
+        <div className="gird grid-cols-3"></div>
       </div>
     </div>
   );
