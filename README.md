@@ -1,6 +1,6 @@
 # Gameology - Games Reviewer
 
-## [Live Site](https://gameology-assignment.netlify.com)
+## [Live Site](https://gameology-assignment.netlify.app)
 
 ### `Technology I was using:`
 
